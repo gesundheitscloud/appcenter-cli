@@ -14,7 +14,7 @@ Mono and the Android-SDK are required to run the UI test for Android and iOS.
 ## Installation
 
 ```
-npm install --location=global appcenter-cli
+npm install --location=global @d4l/appcenter-cli
 ```
 
 Once installed, use the `appcenter` command. See below for the available commands.

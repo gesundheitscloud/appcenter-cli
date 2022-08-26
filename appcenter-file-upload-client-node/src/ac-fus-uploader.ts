@@ -174,7 +174,7 @@ export class ACFusNodeUploader implements ACFusUploader {
   private error(errorMessage: string, properties: LogProperties = {}, errorCode?: ACFusUploadState) {
     errorCode = errorCode || ACFusUploadState.FatalError;
     this.setState(errorCode);
-    if (errorMessage.indexOf('reason: self signed certificate in certificate chain') !== -1) {
+    if (errorMessage.indexOf("reason: self signed certificate in certificate chain") !== -1) {
       errorMessage += "\n" + "This error often idicates that you are using corp VPN or Firewall. Please, try to disable them.";
     }
     properties.VerboseMessage = "Error Code: " + errorCode + " - " + errorMessage;

@@ -3,7 +3,7 @@ import * as assert from "assert";
 import * as ProxyAgent from "proxy-agent";
 import { after } from "mocha";
 
-describe('fetchWithOptions', () => {
+describe("fetchWithOptions", () => {
   context("When proxy is not set", () => {
     beforeEach(() => {
       process.env.https_proxy = "";
@@ -27,4 +27,3 @@ describe('fetchWithOptions', () => {
     process.env.https_proxy = "";
   });
 });
-

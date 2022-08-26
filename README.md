@@ -1,5 +1,3 @@
-# Important: This is a forked repo with fixes for getting Appcenter Codepush to work with our Capacitor project
-
 # App Center Command Line Interface (CLI)
 
 ℹ️ This is a forked version of the official [microsoft/appcenter-cli](https://github.com/microsoft/appcenter-cli) project adapted for the needs of our Capacitor based projects.

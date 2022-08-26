@@ -103,6 +103,11 @@ export default class CodePushReleaseCommandBase extends AppCommand {
     this.deploymentName = this.specifiedDeploymentName;
 
     if (this.privateKeyPath) {
+      // Info: The below code is commented as for a project of type "React Native", app center wraps it 
+      // in the CodePush directory. This breaks the Code push in a Capacitor application. Hence following
+      // the discussion here: https://github.com/mapiacompany/capacitor-codepush/issues/64#issuecomment-1063433488,
+      // we are commenting out the piece of code which is responsible for the wrapping. This fixes the 
+      // code push for capacitor applications.
       // const appInfo = (
       //   await out.progress(
       //     "Getting app info...",

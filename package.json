@@ -153,8 +153,5 @@
     "xcode": "3.0.1",
     "xml2js": "0.4.23",
     "yazl": "2.5.1"
-  },
-  "directories": {
-    "test": "test"
   }
 }
